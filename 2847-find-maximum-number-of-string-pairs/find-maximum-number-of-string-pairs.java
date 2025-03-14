@@ -13,9 +13,13 @@ class Solution {
             for(int j=i+1;j<n;j++){
             String a=words[i];  
             String b=words[j];
+            if(a.equals("0")){
+                break;
+            }
             String revb=reverse(b);
             if(revb.equals(a)){
                 ans++;
+                words[j]="0";
                 break;
             }
         }
