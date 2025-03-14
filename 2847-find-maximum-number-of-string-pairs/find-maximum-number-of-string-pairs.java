@@ -16,6 +16,7 @@ class Solution {
             String revb=reverse(b);
             if(revb.equals(a)){
                 ans++;
+                break;
             }
         }
     }
